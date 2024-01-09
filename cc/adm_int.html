@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>welcome admin</title>
+
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body class="main" >
+        <nav class= "n1" >
+            <div><img src="imgs\iicc.jfif" alt="iic logo"></div>
+            <div class="head1"><h1>Institute of Informatics and Communication </h1></div>
+        </nav>
+<br>
+<div class="n2">
+<div class="a1">
+  <button class="tablinks" onclick="opentab(event, 'attendence')" id="defaultOpen">Attendence</button><br><br>
+  <button class="tablinks" onclick="opentab(event, 'student information')">Student Information</button><br><br>
+  <button class="tablinks" onclick="opentab(event, 'faculty information')">Faculty Information</button><br><br>
+</div>
+ 
+<div id="attendence" class="tabcontent">
+  <div class="a4">
+    
+  <div class="n2">  
+  <div class="dropdown">
+    <button class="dropbtn " style="margin-right: 45px;">Subject</button>
+    <div class="dropdown-content">
+      <a href="#">sub1</a>
+      <a href="#">sub2</a>
+      <a href="#">sub3</a>
+    </div>
+  </div>
+    <div class="dropdown">
+      <button class="dropbtn" style="margin-right: 10px;">Year</button>
+      <div class="dropdown-content">
+        <a href="#">2022-24</a>
+        <a href="#">2023-25</a>
+      </div>
+    </div>
+    <div class="search">
+      <form action="#">
+          <input type="text"
+                 placeholder=" Search"
+                 name="search">
+          <button>
+              <i class="fa fa-search"
+                 style="font-size: 16px;">
+              </i>
+          </button>
+      </form>
+  </div>
+</div>
+    
+    
+  
+    <div class="dropdown">
+      <button class="dropbtn">Semester</button>
+      <div class="dropdown-content">
+        <a href="#">1</a>
+        <a href="#">2</a>
+        <a href="#">3</a>
+        <a href="#">4</a>
+      </div>
+    </div>
+  <!-- <h3>attendence</h3> -->
+  
+  <table style="width: 100%;">
+    <tr>
+      <th>Name</th>
+      <th>14-Dec-2023</th>
+      <th>15-Dec-2023</th>
+    </tr>
+    <tr>
+      <td>Ashish Kumar</td>
+      <td>present</td>
+      <td>absent</td>
+    </tr>
+    <tr>
+      <td>Jatin</td>
+      <td>absent</td>
+      <td>present</td>
+    </tr>
+    <tr>
+      <td>Swati</td>
+      <td>present</td>
+      <td>present</td>
+    </tr>
+    <tr>
+      <td>Harshita</td>
+      <td>present</td>
+      <td>present</td>
+    </tr>
+
+  </table>
+  
+
+  <div class="n2">
+  <div class="dropdown1">
+  <button class="dropbtn1" id="gen-btn" onclick="generateReport('report.html')">Generate report</button>
+   
+</div>
+ <div class="dropdown1">
+  <!-- add style to dropdown1-->
+  <button class="dropbtn1" id="edit-btn" >Edit</button> 
+</div>
+<div class="dropdown1">
+  <!-- add style to dropdown1-->
+  <button class="dropbtn1" id="save-btn" >Save</button>
+</div>
+</div>
+
+</div>
+</div>
+
+ 
+<div id="student information" class="tabcontent">
+  
+  <div class="a3">
+    <div class="a2">
+        
+        <div>Photo: </div>
+        <div><img slot="student's image"></div>
+        <div class="a4">
+            <div>Name: </div>
+            <div>Roll No.: </div>
+            <div>Total Attendance: </div>
+            <div>SGPA: </div>
+            <div>Course: </div>
+            <div>Semester: </div>
+            <div>Contact Info: </div>
+            <div>DOB: </div>
+        
+    </div>
+    
+        </div>
+        <div class="a2">
+            <div><button class="b2" id="edit-btn" onclick="edit()">Edit</button></div>
+            <div><button class="b2" id="remove-btn" onclick="remove()">Remove</button></div>
+        </div>
+        
+        <div><button class="b2" id="gen-btn" onclick="generate()">Generate Report</button></div>
+    </div>   
+    </div>
+  
+
+
+<div id="faculty information" class="tabcontent">
+  <table style="width: 100%;">
+    <tr>
+      <th>Name</th>
+      <th></th>
+      <th></th>
+    </tr>
+    <tr>
+      <td>Ashish Kumar</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Jatin</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Swati</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Harshita</td>
+      <td></td>
+      <td></td>
+    </tr>
+
+  </table>
+</div>
+</div>
+<script src="adm_int.js">
+</script>
+ 
+
+</body>
+</html> 

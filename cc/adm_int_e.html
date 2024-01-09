@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>welcome admin</title>
+
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+
+    <body class="main" >
+        <nav class= "n1" >
+            <div><img src="imgs\iicc.jfif" alt="iic logo"></div>
+            <div class="head1"><h1>Institute of Informatics and Communication </h1></div>
+        </nav>
+<br>
+<div class="n2">
+<div class="a1">
+  <button class="tablinks" onclick="opentab(event, 'attendence')" id="defaultOpen">Attendence</button><br><br>
+  <button class="tablinks" onclick="opentab(event, 'student information')">Student Information</button><br><br>
+  <button class="tablinks" onclick="opentab(event, 'faculty information')">Faculty Information</button><br><br>
+</div>
+ 
+<div id="attendence" class="tabcontent">
+    <table style="width: 100%; height: 100%;">
+        <tr>
+         <th>Year</th>
+         <th>Sem</th>
+         <th>Name</th>
+         <th> Roll no </th>
+         <th>Enrollment no</th>
+         <th>Action</th>
+       </tr>
+       <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td> <button type="submit" id="edit1-btn">Edit</button><button type="submit" id="view-btn">View</button></td>
+
+       </tr> 
+        </table>
+        <br><br>
+        </div>
+    <div id="student information" class="tabcontent">
+  
+            <div class="a3">
+              <div class="a2">
+                  
+                  <div>Photo: </div>
+                  <div><img slot="student's image"></div>
+                  <div class="a4">
+                      <div>Name: </div>
+                      <div>Roll No.: </div>
+                      <div>Total Attendance: </div>
+                      <div>SGPA: </div>
+                      <div>Course: </div>
+                      <div>Semester: </div>
+                      <div>Contact Info: </div>
+                      <div>DOB: </div>
+                  
+                    </div>
+              
+                </div>
+                <div class="a2">
+                      <div><button class="b2" id="edit-btn" onclick="edit()">Edit</button></div>
+                      <div><button class="b2" id="remove-btn" onclick="remove()">Remove</button></div>
+                </div>
+                  
+                <div><button class="b2" id="gen-btn" onclick="generate()">Generate Report</button></div>
+            </div>   
+    </div>
+            
+          
+          
+    <div id="faculty information" class="tabcontent">
+        <table style="width: 100%;">
+            <tr>
+              <th>Name</th>
+              <th></th>
+              <th></th>
+            </tr>
+            <tr>
+              <td>Ashish Kumar</td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>Jatin</td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>Swati</td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>Harshita</td>
+              <td></td>
+              <td></td>
+            </tr>
+        
+          </table>
+    </div>
+    </div>
+    <script src="adm_int.js"></script>
+    </body>
+</html>

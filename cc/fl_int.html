@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    
+    <title>fl_int page</title>
+    </head>
+    <body>
+        <nav class= "n1">
+            <div><img src="imgs\iicc.jfif" alt="iic logo"></div>
+            <div class="head1"><h1>Institute of Informatics and Communication</h1></div>
+        </nav>
+        <br>
+        <div class="n2">
+            <div class="a1">
+                <button class="tablinks" onclick="opentab(event, 'Mark attendence')" id="defaultOpen">Mark Attendence</button><br><br>
+                <button class="tablinks" onclick="opentab(event, 'Schedule')">Schedule</button><br><br>
+            </div>
+
+
+            <div id="Mark attendence" class="tabcontent">
+                <div class="a4">
+                    <div class="n2">
+                        <div class="dropdown">
+                            <button class="dropbtn " style="margin-right: 500px;">Subject</button>
+                            <div class="dropdown-content">
+                              <a href="#">sub1</a>
+                              <a href="#">sub2</a>
+                              <a href="#">sub3</a>
+                            </div>
+                        </div>
+                        <div>
+                            <label class="date-c">Date :</label><input type="date" id="date-id">
+                        </div>
+                    </div>
+                    <div>
+                      <table style="width: 100%; height: 100%;">
+                        <tr>
+                         <th>ROLL NO.</th>
+                         <th>NAME</th>
+                         <th>AttENDANCE</th>
+                       </tr>
+                       <tr>
+                            <td>1.</td>
+                            <td></td>
+                            <td> <button type="submit" id="present-btn">Present</button><button type="submit" id="absent-btn">Absent</button></td>
+                    
+                       </tr>
+                       <tr>
+                       <td>2.</td>
+                       <td></td>
+                            <td></td>
+                       </tr>
+                       <tr>
+                        <td>3.</td>
+                        <td></td>
+                            <td></td>
+                       </tr>
+                       <tr>
+                        <td>4.</td>
+                        <td></td>
+                            <td></td>
+                       </tr>
+                        </table>
+                    </div>
+                    <div>
+                        <button class="b2" id="submit-btn" onclick="submit()" style="margin-left: 370px;">Submit</button>
+                    </div>
+                </div>
+            </div>
+
+
+            <div id="Schedule" class="tabcontent">
+              <table style="width: 100%; height: 100%;">
+                <tr>
+                 <th>S.NO</th>
+                 <th>NAME</th>
+                 <th>SUBJECT</th>
+                 <th> DATE </th>
+                 <th>TIME</th>
+                 <th>ACTION</th>
+               </tr>
+               <tr>
+                    <td>1.</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td> <button type="submit" id="add-btn">Add</button><button type="submit" id="remove-btn">Remove</button></td>
+            
+               </tr>
+               <tr>
+               <td>2.</td>
+               <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+               </tr>
+               <tr>
+                <td>3.</td>
+                <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+               </tr>
+               <tr>
+                <td>4.</td>
+                <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+               </tr>
+                </table>
+            </div>
+
+
+        </div>
+    <script src="adm_int.js"></script>
+</body>
+</html>
